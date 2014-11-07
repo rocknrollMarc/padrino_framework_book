@@ -26,6 +26,8 @@ gem 'rack-test', :require => 'rack/test', :group => 'test'
 gem 'padrino', '0.12.4'
 
 gem 'padrino-sprockets', :require => ['padrino/sprockets'], :git => 'git://github.com/nightsailer/padrino-sprockets.git'
+gem 'uglifier', '2.1.1'
+gem 'yui-compressor', '0.9.6'
 # Or Padrino Edge
 # gem 'padrino', :github => 'padrino/padrino-framework'
 
