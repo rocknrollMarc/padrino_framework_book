@@ -4,6 +4,9 @@ Dir[File.expand_path(File.dirname(__FILE__) + "/../app/helpers/**/*.rb")].each(&
 
 RSpec.configure do |conf|
   conf.include Rack::Test::Methods
+  conf.expect_with :rspec do |c|
+    c.syntax = [:should, :expect]
+  end
 end
 
 # You can use this method to custom specify a Rack app

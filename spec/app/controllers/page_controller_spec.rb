@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe PageController do
+describe "PageController" do
   describe "GET #about" do
     it 'renders the :about ciew' do
       get '/about'
