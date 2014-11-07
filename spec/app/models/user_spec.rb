@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe "User" do
-  let(:user) { FactoryGirl.build(:user) }
+  let(:user) { build(:user) }
   let(:job_offer) { { title: 'Padrino Engineer', location: 'Hamburg', description: "Best place on earth" } }
 
   it 'can be created' do
@@ -13,8 +13,10 @@ describe "User" do
   end
 
   it 'have job-offers' do
-    user.job_offers.build(FactoryGirl.attributes_for(:job_offer))
+    user.job_offers.build(attributes_for(:job_offer))
     user.job_offers.size.should == 1
   end
+
+
 
 end
