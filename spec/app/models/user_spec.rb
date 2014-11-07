@@ -13,7 +13,7 @@ describe "User" do
   end
 
   it 'have job-offers' do
-    user.job_offers.build(job_offer)
+    user.job_offers.build(FactoryGirl.attributes_for(:job_offer))
     user.job_offers.size.should == 1
   end
 

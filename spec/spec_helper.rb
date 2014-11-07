@@ -5,6 +5,7 @@ require File.dirname(__FILE__) + "/factories"
 
 RSpec.configure do |conf|
   conf.include Rack::Test::Methods
+  conf.include FactoryGirl::Syntax::Methods
   conf.expect_with :rspec do |c|
     c.syntax = [:should, :expect]
   end
